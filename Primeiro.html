@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Marques - Software Engineer</title>
+    <link rel="stylesheet" href="body.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="Assets/logo.png"  class="logo">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#tech-stack">Tech Stack</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h2>Hi, I’m Pedro Marques</h2>
+            <p>Building elegant software solutions for a better tomorrow.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section fade-in">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="content">
+            <p class="highlight">
+                <strong>Transformando Desafios em Soluções Tecnológicas</strong>
+            </p>
+            <p>
+                Com ampla experiência em suporte técnico, administração de servidores e desenvolvimento de software, ofereço soluções ágeis e eficazes para atender às necessidades do mercado. Minha expertise abrange desde suporte ao usuário final até a implementação de metodologias ágeis como <strong>Scrum</strong> e <strong>Kanban</strong>.
+            </p>
+            <p>
+                Sou especialista em gerenciamento de ambientes corporativos, incluindo <strong>Active Directory</strong>, controle de acessos, <strong>Office 365</strong> e arquitetura de soluções em nuvem. Além disso, domino linguagens como <strong>Python</strong>, <strong>SQL</strong> e <strong>Java</strong>, proporcionando eficiência e inovação no desenvolvimento de sistemas.
+            </p>
+            <p>
+                Seja na resolução de problemas ou na construção de novas soluções, meu compromisso é com a excelência e a evolução tecnológica.
+            </p>
+            <p class="call-to-action"> 
+                <strong>Vamos criar o futuro juntos?</strong>
+            </p>
+        </div>
+    </section>
+    
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="section fade-in">
+        <h2>My Tech Stack</h2>
+        <p><strong>Languages & Frameworks:</strong></p>
+        <a href="#" class="badge">Python</a>
+        <a href="#" class="badge">Java</a>
+        <a href="#" class="badge">Node.js</a>
+        <a href="#" class="badge">React</a>
+        <a href="#" class="badge">Next.js</a>
+        <a href="#" class="badge">TypeScript</a>
+        <a href="#" class="badge">Django</a>
+
+        <p><strong>Tools & Platforms:</strong></p>
+        <a href="#" class="badge">Docker</a>
+        <a href="#" class="badge">Kubernetes</a>
+        <a href="#" class="badge">PostgreSQL</a>
+        <a href="#" class="badge">RabbitMQ</a>
+        <a href="#" class="badge">MongoDB</a>
+        <a href="#" class="badge">GCP</a>
+        <a href="#" class="badge">Linux</a>
+        <a href="#" class="badge">Git</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section fade-in">
+   <!-- Contact Section -->
+<section id="contact" class="section fade-in">
+    <h2>Let’s Connect!</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+        <a href="mailto:poloniosh@outlook.com.br" style="text-decoration: none; color: #d93025;">
+            <i class="fas fa-envelope fa-2x"></i>
+        </a>
+        <a href="https://linkedin.com/in/pedrolucas167" target="_blank" style="text-decoration: none; color: #0077b5;">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/pedro.lucas.marques/" target="_blank" style="text-decoration: none; color: #e4405f;">
+            <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://github.com/pedrolucas167" target="_blank" style="text-decoration: none; color: #333;">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+    </div>
+</section>
+
+</section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024, Pedro Marques - All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('.fade-in');
+            const revealSection = () => {
+                const scrollY = window.pageYOffset;
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - window.innerHeight / 1.3;
+                    if (scrollY > sectionTop) {
+                        section.classList.add('visible');
+                    }
+                });
+            };
+            window.addEventListener('scroll', revealSection);
+            revealSection();
+        });
+    </script>
+
+</body>
+</html>
