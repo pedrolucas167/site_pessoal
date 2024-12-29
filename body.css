@@ -64,38 +64,40 @@
         left: 0;
         width: 0;
         height: 2px;
-        background: #e83e8c;
+        background: rgba(0, 123, 255, 0.7);
         transition: width 0.3s ease;
     }
     
+    
     nav a:hover {
-        color: #e83e8c;
+        color: rgba(0, 123, 255, 0.7)
     }
     
     nav a:hover::before {
         width: 100%;
     }
     
-    /* Hero (painel principal) */
-    .hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 70vh;
-        width: 90%;
-        margin: 80px auto 0;
-        background: linear-gradient(135deg, rgba(0, 123, 255, 0.7), rgba(0, 255, 123, 0.7)),
-                    url('https://via.placeholder.com/1920x1080') no-repeat center/cover;
-        border-radius: 15px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-        color: white;
-        position: relative;
-        text-align: center;
-        padding: 30px;
-        overflow: hidden;
-        transition: transform 0.6s, box-shadow 0.6s;
-    }
+   /* Hero (painel principal) */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Altura reduzida */
+    width: 80%; /* Largura reduzida */
+    margin: 50px auto; /* Margem ajustada */
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.7), rgba(0, 255, 123, 0.7)),
+    url('https://via.placeholder.com/1920x1080/000000/FFFFFF?text=') no-repeat center/cover;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombras mais leves */
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 20px; /* Padding reduzido */
+    overflow: hidden;
+    transition: transform 0.6s, box-shadow 0.6s;
+}
+
     
     .hero:hover {
         transform: translateY(-10px) scale(1.02);
