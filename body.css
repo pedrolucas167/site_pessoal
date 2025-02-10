@@ -18,7 +18,7 @@
     /* Cabeçalho */
     header {
         position: relative;
-        top: 9px; /* Adicionei unidade para o valor */
+        top: 9px;
         width: 95%;
         background: rgba(255, 255, 255, 0.95);
         padding: 35px 45px;
@@ -67,6 +67,21 @@
         background: rgba(0, 123, 255, 0.7);
         transition: width 0.3s ease;
     }
+
+    /* Estilos responsivos para dispositivos móveis */
+@media (max-width: 480px) {
+    header {
+        padding: 15px 20px; /* Padding ainda menor para móveis */
+        flex-direction: column; /* Alinhar itens verticalmente */
+        align-items: flex-start; /* Alinhar à esquerda */
+    }
+
+    .logo {
+        width: 100px; /* Tamanho menor para o logo */
+        margin-right: 0; /* Remover margem à direita */
+        margin-bottom: 10px; /* Adicionar margem inferior */
+    }
+}
     
     
     nav a:hover {
